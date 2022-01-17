@@ -8,19 +8,28 @@
   </head>
   <body>
     <div class="loginbox">
+      <!-- Add new line between tags for better readability -->
       <img src="login avatar.png" class="avatar" />
+
       <h1>Login here</h1>
-      <form class="form" action="home.html" method="post">
+      <!-- Change method to get to go to 'home.html' because you need backend language to post (or send) data -->
+      <form class="form" action="home.html" method="get">
         <p>Username</p>
         <input autocomplete="off" type="text" name="username" placeholder="Enter Username">
         <div id="username_error">Please fill up your username</div>
+
         <p>Password</p>
         <input type="password" name="password" placeholder="Enter Password">
         <div id="password_error">Please fill up your password</div>
+        
         <input type="submit" name="" value-="Login" ><br>
+        
         <a href="#" class="link">Lost your password?</a><br>
         <a href="#" class="link">Don't have an account?</a><br>
       </form>
     </div>
+
+    <!-- Link JavaScript file usually put at the bottom of <body> tag -->
+    <script src="./valid.js"></script>
   </body>
 </html>
